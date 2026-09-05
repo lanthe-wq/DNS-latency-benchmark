@@ -9,8 +9,8 @@ Two versions are included:
 
 | Script                | Platform      | Requirements                          |
 |-----------------------|---------------|----------------------------------------|
-| `dns_speed_test.sh`   | macOS         | `dig` + `scutil` (both built in)       |
-| `dns_speed_test.ps1`  | Windows       | PowerShell 5.1+ (built into Win 10/11) |
+| `dns_speed_test_macos.sh`   | macOS         | `dig` + `scutil` (both built in)       |
+| `dns_speed_test_win.ps1`  | Windows       | PowerShell 5.1+ (built into Win 10/11) |
 
 Neither script requires installing anything extra.
 
@@ -27,8 +27,8 @@ make a decision based on real data instead of guesswork.
 ```bash
 git clone https://github.com/<your-username>/dns-latency-benchmark.git
 cd dns-latency-benchmark
-chmod +x dns_speed_test.sh
-./dns_speed_test.sh
+chmod +x dns_speed_test_macos.sh
+./dns_speed_test_macos.sh
 ```
 
 The script will:
@@ -44,11 +44,11 @@ The script will:
 
 ## Windows usage
 
-Right-click `dns_speed_test.ps1` → **Run with PowerShell**, or from a
+Right-click `dns_speed_test_win.ps1` → **Run with PowerShell**, or from a
 PowerShell prompt:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\dns_speed_test.ps1
+powershell -ExecutionPolicy Bypass -File .\dns_speed_test_win.ps1
 ```
 
 > If PowerShell blocks the script due to execution policy, the command above
