@@ -25,7 +25,7 @@ make a decision based on real data instead of guesswork.
 ## macOS usage
 
 ```bash
-git clone https://github.com/<your-username>/dns-latency-benchmark.git
+git clone https://github.com/lanthe-wq/DNS-latency-benchmark.git
 cd dns-latency-benchmark
 chmod +x dns_speed_test_macos.sh
 ./dns_speed_test_macos.sh
